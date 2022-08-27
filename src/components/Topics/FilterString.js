@@ -16,8 +16,13 @@ function FilterString() {
         let colors = unFilteredArray
         let filteredArray = []
 
-      
+        for( let i = 0; i < colors.length; i++) {
+            if (colors[i].includes(userInput) ) {
+                filteredArray.push(colors[i]);
+            }
+        }
   
+        setFilteredArray(filteredArray)
     }
 
     return (
